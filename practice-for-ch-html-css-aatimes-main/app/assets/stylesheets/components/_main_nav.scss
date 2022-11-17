@@ -1,19 +1,22 @@
 @use '../variables' as *;
 
 .main-nav {
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-  
+  display: flex;
+  align-items: center;
 }
 
 .left-nav {
 
   > ul {
     > li {
-      
+      text-transform: uppercase;
     }
   }
 
@@ -25,7 +28,7 @@
 .right-nav  {
   > ul {
     > li {
-      
+      text-transform: uppercase;
     }
 
     > li:last-of-type {
@@ -34,13 +37,13 @@
   }
   
   i {
-    
+    font-size: 24px;
   }
 }
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-  
+  background-color: lightgray;
 }
 
     
